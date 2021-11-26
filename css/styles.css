@@ -1,0 +1,49 @@
+:root {
+  --main-color: #212121;
+  --background: #ffffff;
+  --main-text: #212121;
+  --secondary-text: #757575;
+  --color-active: #2196f3;
+  --color-logo: #000000;
+  --bacground-button: #f5f4fa;
+}
+body {
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+li,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+/* ===========logo========== */
+.logo-first {
+  color: var(--color-active);
+}
+.logo-second {
+  color: var(--color-logo);
+}
+
+/* ===========header========== */
+.nav {
+  color: var(--main-color);
+}
+.nav:hover,
+.nav:focus {
+  color: var(--color-active);
+}
+.contacts {
+  color: var(--secondary-text);
+}
+.contacts:hover,
+.contacts:focus {
+  color: var(--color-active);
+}

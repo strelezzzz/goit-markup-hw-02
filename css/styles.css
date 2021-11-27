@@ -1,7 +1,6 @@
 :root {
   --main-color: #212121;
   --background: #ffffff;
-  --main-text: #212121;
   --secondary-text: #757575;
   --color-active: #2196f3;
   --color-logo: #000000;
@@ -17,7 +16,6 @@ body {
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  text-align: left;
   color: var(--main-color);
   background-color: var(--background);
 }
@@ -26,18 +24,18 @@ li,
 ol {
   list-style: none;
 }
-
-h2 {
+/* ======= Portfolio ========= */
+h2.projects {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
-p {
+.projects p {
   font-weight: normal;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.87;
   color: var(--secondary-text);
 }
 a {
@@ -113,7 +111,7 @@ a.active-page {
 }
 .buttons {
   background-color: var(--bacground-button);
-  color: var(--main-text);
+  color: var(--main-color);
   cursor: pointer;
   font-family: Roboto;
   font-weight: 500;
@@ -126,4 +124,51 @@ a.active-page {
 .buttons:focus {
   background-color: var(--color-active);
   color: var(--background);
+}
+/* ======== Studio ================== */
+.about p {
+  font-weight: normal;
+  color: var(--secondary-text);
+}
+.about h3 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+/* ====== Studio ===== */
+.hero {
+  background-color: var(--background-footer);
+}
+.hero h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--background);
+}
+.what-we-do h2,
+.team h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.team h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+.team p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.18px;
+  text-align: center;
+  color: var(--secondary-text);
 }

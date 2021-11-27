@@ -36,11 +36,11 @@ a {
 }
 
 /* ===========header========== */
-.nav {
+.nav-link {
   color: var(--main-color);
 }
-.nav:hover,
-.nav:focus {
+.nav-link:hover,
+.nav-link:focus {
   color: var(--color-active);
 }
 .contacts {
@@ -49,6 +49,11 @@ a {
 .contacts:hover,
 .contacts:focus {
   color: var(--color-active);
+}
+.nav-link .current {
+  font-weight: 900;
+  color: red;
+  background-color: lawngreen;
 }
 /* =======footer==== */
 .footer {
@@ -78,4 +83,27 @@ a {
 }
 .footer .contacts {
   color: var(--footer-contacts);
+}
+/* ================Filters============== */
+.buttons {
+  background-color: var(--background);
+}
+.filters-all,
+.filters-web,
+.filters-app,
+.filters-design,
+.filters-marketing {
+  background-color: var(--bacground-button);
+}
+.filters-all:hover,
+.filters-web:hover,
+.filters-app:hover,
+.filters-design:hover,
+.filters-marketing:hover .filters-all:focus,
+.filters-web:focus,
+.filters-app:focus,
+.filters-design:focus,
+.filters-marketing:focus {
+  background-color: var(--color-active);
+  color: var(--background);
 }

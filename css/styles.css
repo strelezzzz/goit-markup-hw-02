@@ -7,13 +7,14 @@
   --color-logo: #000000;
   --bacground-button: #f5f4fa;
   --background-footer: #2f303a;
+  --footer-contacts: rgba(255, 255, 255, 0.6);
 }
 body {
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   text-align: left;
 }
@@ -67,8 +68,14 @@ a {
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.footer .address,
+.footer .contacts {
+  font-style: normal;
 }
 .footer .contacts {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-contacts);
 }

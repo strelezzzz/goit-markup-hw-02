@@ -9,6 +9,7 @@
   --background-footer: #2f303a;
   --footer-contacts: rgba(255, 255, 255, 0.6);
 }
+
 body {
   font-family: Roboto;
   font-size: 14px;
@@ -17,45 +18,76 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-align: left;
+  color: var(--main-color);
+  background-color: var(--background);
 }
+
 li,
 ol {
   list-style: none;
 }
 
+h2 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--secondary-text);
+}
 a {
   text-decoration: none;
   color: inherit;
 }
-/* ===========logo========== */
+.hidden {
+  visibility: hidden;
+}
+/* ========= logo ========================== */
 .logo-first {
   color: var(--color-active);
 }
 .logo-second {
   color: var(--color-logo);
 }
+.logo-first,
+.logo-second {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
 
-/* ===========header========== */
-.nav-link {
+/* ======== Navigation ========================== */
+.nav-link,
+.contacts {
   color: var(--main-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+a.active-page {
+  color: var(--color-active);
+  font-weight: bold;
 }
 .nav-link:hover,
-.nav-link:focus {
+.nav-link:focus,
+.contacts:hover,
+.contacts:focus {
   color: var(--color-active);
 }
 .contacts {
   color: var(--secondary-text);
 }
-.contacts:hover,
-.contacts:focus {
-  color: var(--color-active);
-}
-.nav-link .current {
-  font-weight: 900;
-  color: red;
-  background-color: lawngreen;
-}
-/* =======footer==== */
+
+/* ======= Footer =============================== */
 .footer {
   background-color: var(--background-footer);
 }
@@ -67,43 +99,31 @@ a {
   color: var(--background);
 }
 
-.logo-first,
-.logo-second {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-}
-
 .footer .address,
 .footer .contacts {
   font-style: normal;
+  font-weight: normal;
 }
 .footer .contacts {
   color: var(--footer-contacts);
 }
-/* ================Filters============== */
-.buttons {
+/* ========== Filters ======================= */
+.filters {
   background-color: var(--background);
 }
-.filters-all,
-.filters-web,
-.filters-app,
-.filters-design,
-.filters-marketing {
+.buttons {
   background-color: var(--bacground-button);
+  color: var(--main-text);
+  cursor: pointer;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
 }
-.filters-all:hover,
-.filters-web:hover,
-.filters-app:hover,
-.filters-design:hover,
-.filters-marketing:hover .filters-all:focus,
-.filters-web:focus,
-.filters-app:focus,
-.filters-design:focus,
-.filters-marketing:focus {
+
+.buttons:hover,
+.buttons:focus {
   background-color: var(--color-active);
   color: var(--background);
 }

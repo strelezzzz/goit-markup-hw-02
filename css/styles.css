@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: Roboto;
+  font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -33,7 +33,6 @@ h2.projects {
 }
 
 .projects p {
-  font-weight: normal;
   font-size: 16px;
   line-height: 1.87;
   color: var(--secondary-text);
@@ -97,13 +96,13 @@ a.active-page {
   color: var(--background);
 }
 
-.footer .address,
 .footer .contacts {
   font-style: normal;
-  font-weight: normal;
-}
-.footer .contacts {
   color: var(--footer-contacts);
+}
+.footer .contacts:hover,
+.footer .contacts:focus {
+  color: var(--background);
 }
 /* ========== Filters ======================= */
 .filters {
@@ -127,7 +126,6 @@ a.active-page {
 }
 /* ======== Studio ================== */
 .about p {
-  font-weight: normal;
   color: var(--secondary-text);
 }
 .about h3 {
@@ -166,7 +164,6 @@ a.active-page {
 }
 
 .team p {
-  font-weight: normal;
   font-size: 16px;
   line-height: 1.18px;
   text-align: center;

@@ -137,7 +137,8 @@ a.active-page {
 }
 /* ======== Studio ================== */
 
-.about p {
+.about p,
+.team p {
   color: var(--secondary-text);
 }
 .about h3 {
@@ -147,7 +148,6 @@ a.active-page {
   text-transform: uppercase;
 }
 
-/* ====== Studio ===== */
 .hero {
   background-color: var(--background-footer);
 }
@@ -175,9 +175,6 @@ a.active-page {
   text-align: center;
 }
 
-.team p {
-  color: var(--secondary-text);
-}
 .team h3 {
   font-weight: 500;
 }

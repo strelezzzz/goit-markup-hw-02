@@ -66,7 +66,6 @@ a {
 .contacts {
   color: var(--main-color);
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
@@ -143,7 +142,6 @@ a.active-page {
 }
 .about h3 {
   font-weight: bold;
-  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }

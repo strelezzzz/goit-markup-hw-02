@@ -25,7 +25,7 @@ ol {
   list-style: none;
 }
 /* ======= Portfolio ========= */
-h2.projects {
+.projects h3 {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -53,7 +53,7 @@ a {
 }
 .logo-first,
 .logo-second {
-  font-family: Raleway;
+  font-family: "Raleway", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
@@ -96,12 +96,16 @@ a.active-page {
   color: var(--background);
 }
 
-.footer .contacts {
+.footer .contacts,
+.footer .address {
   font-style: normal;
   color: var(--footer-contacts);
 }
 .footer .contacts:hover,
 .footer .contacts:focus {
+  color: var(--background);
+}
+.footer .address {
   color: var(--background);
 }
 /* ========== Filters ======================= */
@@ -112,19 +116,27 @@ a.active-page {
   background-color: var(--bacground-button);
   color: var(--main-color);
   cursor: pointer;
-  font-family: Roboto;
+  font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
 }
-
+.hero > .buttons {
+  background-color: var(--background);
+  font-weight: bold;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
 .buttons:hover,
 .buttons:focus {
   background-color: var(--color-active);
   color: var(--background);
 }
 /* ======== Studio ================== */
+
 .about p {
   color: var(--secondary-text);
 }
@@ -148,24 +160,24 @@ a.active-page {
   text-transform: uppercase;
   color: var(--background);
 }
-.what-we-do h2,
-.team h2 {
+.what-we-do > .title,
+.team > .title {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
 }
 
-.team h3 {
-  font-weight: 500;
+.team h3,
+.team p {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
 }
 
 .team p {
-  font-size: 16px;
-  line-height: 1.18px;
-  text-align: center;
   color: var(--secondary-text);
+}
+.team h3 {
+  font-weight: 500;
 }
